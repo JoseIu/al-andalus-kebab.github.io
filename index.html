@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== ICONS ===============-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="shortcut icon" href="src/assets/img/favicon.png" type="image/x-icon">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="src/css/normalize.css">
+        <link rel="stylesheet" href="src/css/styles-dist.css">
+        <script src="https://kit.fontawesome.com/13efc71710.js" crossorigin="anonymous" defer></script>
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="src/js/mixitup.min.js" defer></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="src/js/main.js" defer></script>
+        <title>Al-Andalus|restaurante</title>
+        <meta name="title" content="Al-Andalus|restaurante ">
+        <meta name="description" content="restaurante de kebab, hamburguesas, patatas-asadas">
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="src/assets/img/logo3.png" alt="" class="nav__logo-img">
+                    Al-Andalus
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Nosotros</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#menu" class="nav__link">Menú</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <!-- <i class="bi bi-list"></i> -->
+                        <i class="uil uil-expand-arrows"></i>
+                        <!-- <i class="uil uil-bars"></i> -->
+                    </div>
+                </div>
+
+                <!--==Toggle buttom ==-->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main>
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container ">
+
+                    <div class="home__content container">
+                        <h1 class="home__title">Elige tu Comida Favorita y Disfrutalo<span class="second-color">.</span></h1>
+                        <section class="popular">
+                            <article class="popular__card">
+                                <i class="fa-solid fa-burger icon second-color"></i>
+                                <p class="popular__title">Hamburguesa</p>
+                                <a href="#hamburguesas" class="popular__link menu__item" data-filter=".hamburguesas">Ver menú</a>
+                            </article>
+                            <article class="popular__card">
+                                <i class="fa-solid fa-pizza-slice icon second-color"></i>
+                                <p class="popular__title">Pizza</p>
+                                <a href="#pizza" class="popular__link" data-filter=".pizza">Ver menú</a>
+                            </article>
+                            <article class="popular__card">
+                                <!-- <i class="fa-solid fa-pizza-slice icon second-color"></i> -->
+                                <i class="fa-solid fa-ellipsis-vertical icon second-color"></i>
+                                <p class="popular__title">Kebab</p>
+                                <a href="#kebab" class="popular__link" data-filter=".kebab">Ver menú</a>
+                            </article>
+                        </section>
+    
+                        <div class="service">
+                            <p class="service__title second-color">Servicio a domicilio 1.5€</p>
+                            <p class="service__title second-color">!!Sin pedido minino!!</p>
+                            <p class="service__number">956-058-833</p>
+                        </div>
+                    </div>
+
+                    
+                    <a href="#"><img src="src/assets/img/scroll.png" alt="" class="home__scroll"></a>
+                </div>
+                <img src="src/assets/img/hamburger5.jpg" alt="" class="home__img"> 
+            </section>
+
+            <!--==================== ABOUT====================-->
+            <section class="about section" id="about">
+                
+                <img src="src/assets/img/about.jpg" class="about__img" alt="al_andalus_original kebab">
+                <div class="about__container container">
+                    <div class="about__description">
+                        <h2 class="about__title second-color">Sobre Nosotros</h2>
+                        <p class="about__subtitle">Nuestro establecimiento esta dentro de la cocina rapida, siendo esta diferente y muy personal. Nuestra comida es preparada al momento,puede ser consumida en el local o para llevar, tambien disponemos de servicio a domicilio</p>
+                    </div>
+                    <div class="flex">
+                        <div class="about__stats">
+                            <i class="uil uil-estate icon second-color"></i>
+                            <p class="about__subtitle">Lugar para comer</p>
+                        </div>
+                        <div class="about__stats">
+                            <i class="uil uil-map-marker icon second-color"></i>
+                            <p class="about__subtitle">Encuentranos C. Caribe, 4, 11500 El Puerto de Sta María, Cádiz</p>
+                        </div>
+                        <div class="about__stats">
+                            <i class="uil uil-phone icon second-color"></i>
+                            <p class="about__subtitle">956-058-833</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== MENU====================-->
+            <section class="menu section" id="menu">
+                
+                <h2 class="menu__title second-color">Nuestro Menú</h2>
+                <div class="menu__container container">
+                    <ul class="menu__filters">
+                        <li class="menu__item active-menu" data-filter=".kebab">
+                            <h3 class="menu__menu">Kebab</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".papas-asadas">
+                            <h3 class="menu__menu">Papas Asadas</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".pizza">
+                            <h3 class="menu__menu">Pizza</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".pasta">
+                            <h3 class="menu__menu">Pasta</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".mexicano">
+                            <h3 class="menu__menu">Mexicano</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".sandwich">
+                            <h3 class="menu__menu">Sandwich</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".ensalada">
+                            <h3 class="menu__menu">Ensalada</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".hamburguesas">
+                            <h3 class="menu__menu">Hamburguesas</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".para-picar">
+                            <h3 class="menu__menu">Para Picar</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".menu-niños">
+                            <h3 class="menu__menu">Menú niños</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".postres">
+                            <h3 class="menu__menu">Postres</h3>
+                        </li>
+                        <li class="menu__item" data-filter=".bebidas">
+                            <h3 class="menu__menu">Bebidas</h3>
+                        </li>
+                    </ul>
+                    <!--=======Contenido del menú=========-->
+                    <div class="menu__content">
+                        <!--=======KEBAB=========-->
+                        <div class="menu_subcontainer" id="kebab">
+                            <!-- <h2 class="menu__content-title kebab">Pollo,Ternera y Mixto.</h2> -->
+                            <h3 class="menu__content-subtitle kebab">Con lechuga, tomare y salsa yougurt.</h3>
+                            
+                            <div class="menu__cards">
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Al Andalus<span class="menu__price">5,00€</span></h2>
+                                        <p>Con queso feta.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4.1-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Turco<span class="menu__price">5,00€</span></h2>
+                                        <p>Con patatas fritas.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4.2-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Ankara<span class="menu__price">5,00€</span></h2>
+                                        <p>Con cebolla crujiente y mozzarella.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4.3-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Mediterraneo<span class="menu__price">5,00€</span></h2>
+                                        <p>Con pepino y olivas.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4.4-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Vegetal<span class="menu__price">5,00€</span></h2>
+                                        <p>Con falafel, pepuno y feta.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4.5-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Lamacum<span class="menu__price">5,00€</span></h2>
+                                        <!-- <p></p> -->
+                                    </div>
+                                </article>
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Pollo<span class="menu__price">5,00€</span></h2>
+                                        <!-- <p></p> -->
+                                    </div>
+                                </article>
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4.1-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Ternera<span class="menu__price">5,00€</span></h2>
+                                        <!-- <p></p> -->
+                                    </div>
+                                </article>
+                                <article class="menu__card kebab">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/4.4-kebab.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Mixto<span class="menu__price">5,00€</span></h2>
+                                        <!-- <p></p> -->
+                                    </div>
+                                </article>
+                            </div>
+
+                            <table class="menu__table menu__table--bekabab kebab">
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td menu__table-td--left second-color" colspan="3">Hazlo menú por 1.50€ más</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Menú pequeño</td>
+                                    <td class="menu__table-td">4,00€</td>
+                                    <!-- <td class="menu__table-td">3,50€</td> -->
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Menú mediano</td>
+                                    <td class="menu__table-td">5,00€</td>
+                                    <!-- <td class="menu__table-td">4,50€</td> -->
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Menú grande</td>
+                                    <td class="menu__table-td">6,50€</td>
+                                    <!-- <td class="menu__table-td">5,50€</td> -->
+                                </tr>
+                            </table>
+                        </div>
+
+                        <!--=======PAPAS ASADAS=========-->
+                        <div class="menu_subcontainer" id="papas-asadas">
+                            <h2 class="menu__content-title papas-asadas">Todas a <span class="second-color">4,50€</span>.</h2>
+                            <h3 class="menu__content-subtitle papas-asadas">Al gusto, hasta 4 ingredientes.</h3>
+                            <div class="menu__cards">
+                                <article class="menu__card papas-asadas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/3-patatas.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Holliwood</h2>
+                                        <p>S.clasic, bacon, maiz, carne, barbacoa y mozzarella.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card papas-asadas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/3.1-patatas.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Mexico</h2>
+                                        <p>S.clasic, zanahoria, carne picada, s.mex y mozzarella.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card papas-asadas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/3.2-patatas.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Clasic</h2>
+                                        <p>S.clasic, zanahoria, maiz, olivas, york, atún y mozzarella.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card papas-asadas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/3.3-patatas.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Gaucha</h2>
+                                        <p>S.clasic, pollo crujiente, bacon, s.gaucha y mozzarella.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card papas-asadas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/3.4-patatas.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Brava</h2>
+                                        <p>S.brava, pollo crujiente, york, cebolla frtita y mozzarella.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card papas-asadas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/3.1-patatas.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Diablo</h2>
+                                        <p>S.clasic, carne picada, peperoni, s.picante y mozzarella.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card papas-asadas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/3.2-patatas.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Feria</h2>
+                                        <p>S.tomate, maiz, zanahoria, york, atún, olivas, remolacha y ali oli.</p>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+
+                        <!--=======Pizza=========-->
+                        <div class="menu_subcontainer" id="pizza">
+                            <h2 class="menu__content-title pizza">Al gusto 3 ingredientes.<span class="second-color">6,50€</span>.</h2>
+                            <div class="menu__cards">
+                                <article class="menu__card pizza">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/6.1-pizza.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Kentaky</h2>
+                                        <p>Pollo, bacon y barbacoa.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card pizza">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/6.1-pizza.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Estambul</h2>
+                                        <p>Kebab, feta y s.yougurt.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card pizza">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/6-pizza.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Florencia</h2>
+                                        <p>Atún, york, y doble de mozzarella.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card pizza">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/6.1-pizza.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Jalisco</h2>
+                                        <p>Ternera, nachos y s.mexicana.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card pizza">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/6.1-pizza.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">San Francisco</h2>
+                                        <p>Ternera, nachos, s.mexicana y philadelphia.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card pizza">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/6.1-pizza.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Diabola</h2>
+                                        <!-- <p>Ternera, nachos, s.mexicana y philadelphia.</p> -->
+                                    </div>
+                                </article>
+                                <article class="menu__card pizza">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/6.1-pizza.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">4 Quesos</h2>
+                                        <!-- <p>Ternera, nachos, s.mexicana y philadelphia.</p> -->
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!--=======Pasta=========-->
+                        <div class="menu_subcontainer" id="pasta">
+                            <h2 class="menu__content-title pasta"><span class="second-color"> 6,50€</span>.</h2>
+                            <div class="menu__cards">
+                                <article class="menu__card pasta">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/1-pasta.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Tagliatelle</h2>
+                                        <p>Pomodora, pesto, gamberi, amatrucciona, aarabiatta, putanessca, fetuchini. gorgonzola, altonno..</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card pasta">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/1-pasta.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Gñoquis</h2>
+                                        <p>Pomodora, pesto, gamberi, amatrucciona, aarabiatta, putanessca, fetuchini. gorgonzola, altonno..</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!--=======Mexicano=========-->
+                        <div class="menu_subcontainer" id="mexicano">
+                            <div class="menu__cards">
+                                <article class="menu__card mexicano">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Chimichanga.<span class="menu__price">6.50€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/9.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Enchiladas.<span class="menu__price">6.50€</span></h2>
+                                        <p>Salsa roja o de queso con ternera de pollo.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/quesadilla.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Quesadilla.<span class="menu__price">6.50€</span></h2>
+                                        <p>De queso.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Flauta.<span class="menu__price">6.50€</span></h2>
+                                        <p>De pollo o ternera.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Flauta dorada.<span class="menu__price">6.50€</span></h2>
+                                        <p>De pollo o ternera.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/8.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Chiles en nogada.<span class="menu__price">6.50€</span></h2>
+                                        <!-- <p>De pollo o ternera.</p> -->
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Tacos.<span class="menu__price">6.50€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Burrito.<span class="menu__price">6.50€</span></h2>                                        
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Burrito.<span class="menu__price">6.50€</span></h2>                                       
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Carnita.<span class="menu__price">6.50€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card mexicano">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Milanesas.<span class="menu__price">6.50€</span></h2> 
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!--=======Sandwich=========-->
+                        <div class="menu_subcontainer" id="sandwich">
+                            <h2 class="menu__content-title sandwich">Hazlo menú<span class="second-color"> + 1,50€ </span>.</h2>
+                            <div class="menu__cards">
+                                <article class="menu__card sandwich">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Mixto.<span class="menu__price">3.50€</span></h2>
+                                        <p>York, queso y huevo.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card sandwich">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Pollo.<span class="menu__price">4.00€</span></h2>
+                                        <p>York, queso, huevo, ensalada de pollo, lechuga y mayonesa.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card sandwich">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Mexicano.<span class="menu__price">4.80€</span></h2>
+                                        <p>York, queso y huevo, chile con carne y cheddar.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card sandwich">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Kentucky.<span class="menu__price">4.80€</span></h2>
+                                        <p>York, queso, huevo, pollo a la barbacoa con cheddar.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!--=======Ensaladas=========-->
+                        <div class="menu_subcontainer" id="ensalada">
+                            <h2 class="menu__content-title ensalada">Ración <span class="second-color">5,00€ </span>| Media<span class="second-color">3,00€</span>.</h2>
+                            <h3 class="menu__content-subtitle ensalada">Al gusto 4 ingredientes.</h3>
+
+                            <div class="menu__cards">
+                                <article class="menu__card ensalada">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Tavuk</h2>
+                                        <p>Kebab de pollo, lechucga, tomate, feta y salsa yougurt.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card ensalada">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Turca</h2>
+                                        <p>Pepino, olivas, lechuga, tomate, feta, nueces y s.yougurt.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card ensalada">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Al Andalus</h2>
+                                        <p>Kebab ternera, olivas, lechuga, tomate, feta y s.yougurt.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card ensalada">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Cesar</h2>
+                                        <p>lechuga, tomate, mozzarella, pollo crujiente y picapostes.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card ensalada">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Oriente</h2>
+                                        <p>Bacon frito, lechuga, tomate, mozzarella, nueces, salsa mostaza y miel.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card ensalada">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Hawaiana</h2>
+                                        <p>Piña, york, maiz, lechuga, tomate y salsa clasc.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card ensalada">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Caprichosa</h2>
+                                        <p>Lechuga, tomate, cebolla crujiente, feta, mozzarella, remolacha, vinagre balsamico y nueces.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!--=======Hamburguesas=========-->
+                        <div class="menu_subcontainer" id="hamburguesas">
+                            <h2 class="menu__content-title hamburguesas">Menú+ <span class="second-color">1.50€</span>y Simple<span class="second-color">3.00€</span>.</h2>
+                            <h3 class="menu__content-title hamburguesas"><span class="second-color">Prueba nuestras hamburguesas veganas!</span></h3>
+                            <div class="menu__cards">
+                                <article class="menu__card hamburguesas">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Completa<span class="menu__price">4.00€</span></h2>
+                                        <p>Con bacon y huevo.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card hamburguesas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/2-hamb.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Mexicana<span class="menu__price">4.80€</span></h2>
+                                        <p>Con jalapeños, chile con carne, huevo y salsa mexicana.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card hamburguesas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/2.2-hamb.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Javivi<span class="menu__price">4.80€</span></h2>
+                                        <p>De pollo crujiente con pollo a la barbacoa y cheddar.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card hamburguesas">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Crispy<span class="menu__price">4.50€</span></h2>
+                                        <p>De pollo crujiente en pan de pita con cheddar.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card hamburguesas">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/11-sand.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Kentaky<span class="menu__price">4.80€</span></h2>
+                                        <!-- <p>De pollo crujiente en pan de pita con cheddar.</p> -->
+                                    </div>
+                                </article>
+                                <article class="menu__card hamburguesas">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Simple<span class="menu__price">3.50€</span></h2>
+                                        <!-- <p>De pollo crujiente en pan de pita con cheddar.</p> -->
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!--=======Para Picar=========-->
+                        <div class="menu_subcontainer" id="para-picar">
+                            <div class="menu__cards">
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Patatas Carne y Queso</h2>
+                                        <p>Ración <span class="second-color">6.00€.</span></p>
+                                        <p>Media <span class="second-color">4.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Patatas Beicon y Cheddar</h2>
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                        <p>Media <span class="second-color">4.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Patatas Carbonara</h2>
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                        <p>Media <span class="second-color">4.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Patatas Roquefort</h2>
+                                    
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                        <p>Media <span class="second-color">4.50€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Patatas Gauchas</h2>
+                                       
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                        <p>Media <span class="second-color">4.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <di>
+                                        <h2 class="menu__subtitle">Patatas Boloñesa</h2>
+                                        
+                                        <p>Ración <span class="second-color">6.50€</span>.</p>
+                                        <p>Media <span class="second-color">4.00€</span>.</p>
+                                    </di>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <img src="src/assets/img/menu/500x500/optimizadas/7-nachos.png" class="menu__img" alt="">
+                                    <div>
+                                        <h2 class="menu__subtitle">Nachos</h2>
+                                        
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                        <p>Media <span class="second-color">4.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                        <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                        <div>
+                                            <h2 class="menu__subtitle">Jalapeños con cheddar</h2>
+                                        
+                                            <p>Ración <span class="second-color">6.00€</span>.</p>
+                                        </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Alitas de pollos</h2>
+                                       
+                                        <p>Ración <span class="second-color">8.00€</span>.</p>
+                                        <p>Media <span class="second-color">4.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Mini flautas doradas</h2>
+                                        
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Guacamole casero</h2>
+                                        
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                        <p>Media <span class="second-color">6.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Macan's chees.</h2>
+                                        
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Chile casero</h2>
+                                        <p>Ración <span class="second-color">6.00€</span>.</p>
+                                        <p>Media <span class="second-color">4.00€</span>.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card para-picar">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Aritos de cebolla</h2>
+                                        
+                                        <p>Ración <span class="second-color">4.00€</span>.</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!--=======Menú Niños=========-->
+                        <div class="menu_subcontainer" id="menu-niños">
+                            <h2 class="menu__content-title menu-niños">Con patatas y bebida</h2>
+                            <div class="menu__cards">
+                                <article class="menu__card menu-niños">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Filete de pollo empanado<span class="menu__price">4.50€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card menu-niños">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Nuggets de pollo<span class="menu__price">4.50€</span></h2>
+                                        <p>Con jalapeños, chile con carne, huevo y salsa mexicana.</p>
+                                    </div>
+                                </article>
+                                <article class="menu__card menu-niños">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Kebab pequeño<span class="menu__price">5.00€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card menu-niños">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Palomitas de pollo<span class="menu__price">5.50€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card menu-niños">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Quesadilla de york-queso<span class="menu__price">4.50€</span></h2>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!--=======Postres=========-->
+                        <div class="menu_subcontainer" id="postres">
+                            <div class="menu__cards">
+                                <article class="menu__card postres">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Tarta de Ordeo<span class="menu__price">3.00€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card postres">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Muerte de Chocolate<span class="menu__price">3.00€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card postres">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Burguer Ice<span class="menu__price">4.00€</span></h2>
+                                    </div>
+                                </article>
+                                <article class="menu__card postres">
+                                    <!-- <img src="assets/img/cake1.png" class="menu__img" alt=""> -->
+                                    <div>
+                                        <h2 class="menu__subtitle">Batidos Helados<span class="menu__price">4.00€</span></h2>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <!--=======Bebidas=========-->
+                        <div class="menu_subcontainer" id="bebidas">
+                            <table class="menu__table bebidas">
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Agua pequeña Solan de cabras</td>
+                                    <td class="menu__table-td">0.70€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Agua grande Solan de cabras</td>
+                                    <td class="menu__table-td">1.20€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Latas de refresco</td>
+                                    <td class="menu__table-td">1.00€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Refresco 2 litros</td>
+                                    <td class="menu__table-td">2.00€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Estrella Galicia</td>
+                                    <td class="menu__table-td">1.00€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Cruzcampo Radler</td>
+                                    <td class="menu__table-td">1.00€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Paulaner</td>
+                                    <td class="menu__table-td">2.00€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Coronita</td>
+                                    <td class="menu__table-td">2.00€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Budweiser</td>
+                                    <td class="menu__table-td">2.00€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Heineken</td>
+                                    <td class="menu__table-td">2.00€</td>
+                                </tr>
+                                <tr class="menu__table-tr">
+                                    <td class="menu__table-td">Cerveza Litro</td>
+                                    <td class="menu__table-td">2.00€</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="contact__title second-color">Contacto</h2>
+
+                <div class="contac__container container">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone icon second-color"></i>
+                            <div>
+                                <h3 class="contact__text">Llamanos</h3>
+                                <p class="contact__subtext">956-058-833</p>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope icon second-color"></i>
+                            <div>
+                                <h3 class="contact__text">Email</h3>
+                                <p class="contact__subtext">javiella69@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker icon second-color"></i>
+                            <div>
+                                <h3 class="contact__text">Localización</h3>
+                                <p class="contact__subtext">C. Caribe, 4, 11500 El Puerto de Sta María, Cádiz</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <table class="hour__table">
+                            <!-- <caption class="hour__title">Horaio</caption> -->
+                            <tr class="hour__tr">
+                                <td class="hour__text" >Martes a viernes</td>
+                                <td class="hour__number" colspan="2">20:00-00:00</td>
+                            </tr>
+                            <tr class="hour__tr">
+                                <td class="hour__text">Sábado y Domingo</td>
+                                <td class="hour__number" colspan="4">13:00-16:00 /20:00-00:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6406.734175553139!2d-6.246596091797263!3d36.59346703610328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dcf8cb3d2c295%3A0x4118cd00d9dad5ca!2sAl%20Andalus%20Doner%20kebab!5e0!3m2!1ses!2ses!4v1645716114462!5m2!1ses!2ses" height="500" style="border:0;" allowfullscreen="" loading="lazy" class="contac__map"></iframe>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="name">
+                    <img src="src/assets/img/logo3.png" alt="" class="name__img">
+                    <h2 class="name__title">Al-Andalus</h2>
+                </div>
+                <div class="social">
+                    <a href="https://www.instagram.com/al_andalus_original/?hl=es" target="_blanck" rel="noreferrer nofollow"><i class="uil uil-instagram icon icon-social second-color"></i></a>
+                    <a href="https://www.facebook.com/al.andalusdonerkebab/?ref=page_internal" target="_blanck" rel="noreferrer nofollow"><i class="uil uil-facebook-f icon icon-social second-color"></i></a>
+                </div>
+            </div>
+        </footer>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <!-- <script src="src/js/mixitup.min.js" defer></script> -->
+        <!--=============== MAIN JS ===============-->
+        <!-- <script src="src/js/main.js" defer></script> -->
+    </body>
+</html>
